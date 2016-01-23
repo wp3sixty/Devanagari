@@ -1,5 +1,5 @@
-<time class="updated" datetime="<?= get_post_time( 'c', true );
-?>"><?= get_the_date(); ?></time>
-<p class="byline author vcard"><?= __( 'By', 'devanagari' );
-?> <a href="<?= get_author_posts_url( get_the_author_meta( 'ID' ) );
-?>" rel="author" class="fn"><?= get_the_author(); ?></a></p>
+<div class="row">
+	<div class="col-xs-12">
+		<p class="text-right small-button response"><?php comments_number( 'no responses', '1 response', '% responses' ); ?>.</p>
+	</div>
+</div>
