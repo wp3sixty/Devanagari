@@ -1,4 +1,4 @@
-.small-button{
+.small-button {
   font-family: $font-button;
   vertical-align: baseline;
   color: rgba(0, 0, 0, 0.3);
@@ -6,7 +6,6 @@
   line-height: 23px;
   font-size: 12px;
   clear: both;
-  display: inline-block;
   &:hover {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
