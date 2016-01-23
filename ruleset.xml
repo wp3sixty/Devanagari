@@ -4,5 +4,6 @@
   <rule ref="WordPress-Core">
     <exclude name="WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid" />
     <exclude name="WordPress.Classes.ValidClassName.NotCamelCaps" />
+    <exclude name="WordPress.NamingConventions.ValidVariableName.NotSnakeCase" />
   </rule>
 </ruleset>
