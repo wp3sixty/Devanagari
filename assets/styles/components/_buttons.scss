@@ -3,11 +3,10 @@
   vertical-align: baseline;
   color: rgba(0, 0, 0, 0.3);
   white-space: normal;
-  height: 25px;
   line-height: 23px;
   font-size: 12px;
   clear: both;
-  display: block;
+  display: inline-block;
   &:hover {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;

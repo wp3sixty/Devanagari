@@ -31,13 +31,14 @@
   }
   .avatar {
     @extend .img-circle;
+    display: inline-block;
   }
   .author a {
     color: $brand-primary;
     &:hover {
       color: darken($brand-primary, 3%);
       text-decoration: none;
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
