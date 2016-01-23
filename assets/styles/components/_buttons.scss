@@ -1,13 +1,11 @@
-.small-button{
+.small-button {
   font-family: $font-button;
   vertical-align: baseline;
   color: rgba(0, 0, 0, 0.3);
   white-space: normal;
-  height: 25px;
   line-height: 23px;
   font-size: 12px;
   clear: both;
-  display: block;
   &:hover {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
