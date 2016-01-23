@@ -27,7 +27,7 @@ foreach ( $sage_includes as $file ) {
 }
 unset( $file, $filepath );
 
-/// POPULAR POST WIDGET
+// POPULAR POST WIDGET
 class show_popular extends WP_Widget {
 
 	function show_popular() {
@@ -38,7 +38,7 @@ class show_popular extends WP_Widget {
 	function widget( $args, $instance ) {
 		extract( $args );
 
-//$options = get_option('custom_recent');
+		// $options = get_option('custom_recent');
 		$title      = $instance['title'];
 		$postscount = $instance['posts'];
 
@@ -46,21 +46,20 @@ class show_popular extends WP_Widget {
 
 		echo $before_widget . $before_title . $title . $after_title;
 
-//SHOW the posts
-
+		// SHOW the posts
 		?><ul><?php
-		foreach ( $myposts as $k=>$post ) {
-			setup_postdata( $post );
+foreach ( $myposts as $k => $post ) {
+	setup_postdata( $post );
 
-			?>
-			<li>
-				<button class="button button--circle"><span class="list-index"><?php echo ++$k; ?></span></button>
+	?>
+	<li>
+		<button class="button button--circle"><span class="list-index"><?php echo ++$k; ?></span></button>
 			<a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
 			<a href="<?php echo get_author_posts_url( get_the_ID() ); ?>" class="author-link"><?php echo get_the_author(); ?></a>
 
 			</li>
 			<?php
-		}
+}
 		?></ul><?php
 		echo $after_widget;
 	}

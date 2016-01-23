@@ -54,7 +54,7 @@ class SageWrapping {
 		self::$main_template = $main;
 		self::$base = basename( self::$main_template, '.php' );
 
-		if ( self::$base === 'index' ) {
+		if ( 'index' === self::$base ) {
 			self::$base = false;
 		}
 

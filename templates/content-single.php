@@ -9,15 +9,15 @@
 		<?php if ( has_post_thumbnail() ) { ?>
 			<div class="post-feature-image"><?php the_post_thumbnail( 'full' ); ?></div>
 			<?php
-		} ?>
+} ?>
 		<div class="entry-content">
 			<?php the_content(); ?>
 		</div>
 		<footer>
 			<?php wp_link_pages( [
-				                     'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'devanagari' ),
-				                     'after'  => '</p></nav>'
-			                     ] ); ?>
+				'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'devanagari' ),
+				'after'  => '</p></nav>',
+			] ); ?>
 		</footer>
 		<div class="tag-container">
 			<?php the_tags( '', '' ); ?>

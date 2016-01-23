@@ -8,7 +8,7 @@
 	<?php if ( has_post_thumbnail() ) { ?>
 		<div class="post-feature-image"><?php the_post_thumbnail( 'full' ); ?></div>
 		<?php
-	} ?>
+} ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div>
