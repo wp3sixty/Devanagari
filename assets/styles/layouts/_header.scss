@@ -1,4 +1,4 @@
-header {
+header.banner {
     box-shadow: 0 0 1px rgba(0,0,0,0.15);
 }
 
@@ -16,6 +16,30 @@ header {
         float: left;
         margin-top: 28px;
         margin-left: 30px;
+    }
+
+    .header-search-wrapper {
+        float: right;
+        margin-top: 42px;
+
+        .search-field {
+            border-radius: 999em;
+            min-width: 250px;
+        }
+
+        .search-submit {
+            background-image: url("assets/images/search.png");
+            background-repeat: no-repeat;
+            background-position: 15px 11px;
+            border: 0;
+            box-shadow: none;
+            margin: 0 0 0 -40px;
+            text-indent: -9999px;
+
+            &:hover {
+                background-color: #ffffff;
+            }
+        }
     }
 }
 
