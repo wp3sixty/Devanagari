@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://wp3sixty.local.com"
+    "devUrl": "http://example.dev"
   }
 }
