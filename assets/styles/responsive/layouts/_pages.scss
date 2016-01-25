@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px) {
+	.wrap {
+		.main {
+			width: 75%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.wrap {
+		.main {
+			width: 100%;
+		}
+
+		.sidebar {
+			float: right;
+			width: 100%;
+			padding-left: 7%;
+			padding-right: 7%;
+		}
+	}
+}
