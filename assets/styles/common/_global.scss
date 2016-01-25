@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700);
-a{
-  color: $color-black;
+
+a {
+    transition: all 0.5s ease;
+    color: $color-black;
 }

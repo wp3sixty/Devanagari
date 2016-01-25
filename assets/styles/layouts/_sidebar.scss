@@ -1,9 +1,13 @@
-.widget{
+.widget {
 
   font-family: $font-post-content;
-
   margin-top: 40px;
   border-top: 1px solid rgba(0,0,0,0.05);
+
+  &:first-child {
+      margin-top: 0px;
+      border-top: none;
+  }
 
   h3{
     font-weight: bold;

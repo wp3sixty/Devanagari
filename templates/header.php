@@ -5,7 +5,7 @@
                 <img src="<?php echo get_theme_mod( 'site_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
             <?php } else {
 				bloginfo( 'name' );
-} ?>
+            } ?>
         </a>
         <nav class="nav-primary">
             <?php
