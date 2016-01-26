@@ -1,13 +1,12 @@
 @media screen and (max-width: 1024px) {
-	.wrap {
+	.sidebar-primary .wrap {
 		.main {
 			width: 75%;
 		}
 	}
 }
-
 @media screen and (max-width: 768px) {
-	.wrap {
+	.sidebar-primary .wrap {
 		.main {
 			width: 100%;
 		}

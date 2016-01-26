@@ -67,10 +67,12 @@
   }
 }
 
-.single-post .post {
-  @media (min-width: 750px) {
-    width: 700px;
-    margin: 0 auto;
+body.single article{
+  .entry-author,.entry-content,header,footer,.tag-container,#comments {
+    @media (min-width: 750px) {
+      width: 700px;
+      margin: 0 auto;
+    }
   }
 }
 
