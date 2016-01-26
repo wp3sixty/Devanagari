@@ -18,7 +18,6 @@
 			endif;
 			?>
 		</nav>
-		<div class="header-search-wrapper"><?php get_search_form(); ?></div>
 	</div>
 </header>
 <?php if ( is_home() ) {
