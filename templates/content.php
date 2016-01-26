@@ -1,7 +1,9 @@
 <article <?php post_class(); ?>>
-	<div class="entry-author">
-		<?php get_template_part( 'templates/entry-author' ); ?>
-	</div>
+	<?php if ( get_post_type() === 'post' ) { ?>
+		<div class="entry-author">
+			<?php get_template_part( 'templates/entry-author' ); ?>
+		</div>
+	<?php } ?>
 	<header>
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</header>
