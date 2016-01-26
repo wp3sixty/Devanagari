@@ -25,7 +25,7 @@ header.banner {
             height: 100px;
         }
     }
-    
+
     .nav-primary {
         float: right;
         margin-top: 5px;
@@ -35,7 +35,7 @@ header.banner {
 
 .nav-primary .nav {
     list-style: none;
-    
+
     li {
         float: left;
         margin-right: 20px;
@@ -76,4 +76,8 @@ header.banner {
     top: 30%;
     color: #fff;
     text-align: center;
+}
+
+.carousel-inner > .item > a > img {
+  margin: 0 auto;
 }
