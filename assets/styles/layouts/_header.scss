@@ -27,33 +27,9 @@ header.banner {
     }
     
     .nav-primary {
-        float: left;
+        float: right;
         margin-top: 5px;
         margin-left: 30px;
-    }
-
-    .header-search-wrapper {
-        float: right;
-        margin-top: 34px;
-
-        .search-field {
-            border-radius: 999em;
-            min-width: 250px;
-        }
-
-        .search-submit {
-            background-image: url("assets/images/search.png");
-            background-repeat: no-repeat;
-            background-position: 15px 11px;
-            border: 0;
-            box-shadow: none;
-            margin: 0 0 0 -40px;
-            text-indent: -9999px;
-
-            &:hover {
-                background-color: #ffffff;
-            }
-        }
     }
 }
 
