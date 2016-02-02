@@ -48,18 +48,19 @@ class show_popular extends WP_Widget {
 
 		// SHOW the posts
 		?><ul><?php
-foreach ( $myposts as $k => $post ) {
-	setup_postdata( $post );
+		foreach ( $myposts as $k => $post ) {
+			$id = $post->ID;
+			$author_id = $post->post_author;
+			$author_name = get_the_author_meta( 'display_name', $author_id );
+			?>
+			<li>
+				<button class="button button--circle"><span class="list-index"><?php echo ++$k; ?></span></button>
+					<a href="<?php the_permalink( $id ); ?>" class="post-title"><?php echo get_the_title( $id ); ?></a>
+					<a href="<?php echo get_author_posts_url( $author_id ); ?>" class="author-link"><?php echo $author_name; ?></a>
 
-	?>
-	<li>
-		<button class="button button--circle"><span class="list-index"><?php echo ++$k; ?></span></button>
-			<a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
-			<a href="<?php echo get_author_posts_url( get_the_ID() ); ?>" class="author-link"><?php echo get_the_author(); ?></a>
-
-			</li>
-			<?php
-}
+					</li>
+					<?php
+		}
 		?></ul><?php
 		echo $after_widget;
 	}
